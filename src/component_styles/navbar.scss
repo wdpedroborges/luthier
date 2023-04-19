@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+$menuHeight: 10vh;
+
+.toggleNavbar, .toggleNavbarList {
+	display: none;
+	cursor: pointer;
+	font-weight: bolder;
+	font-size: 2rem;
+	font-style: normal;
+	position: absolute;
+	top: 1.5rem;
+	right: 0;
+	user-select: none;
+
+	img {
+		max-width: 30px;
+		&:hover {
+			opacity: .75;
+		}
+	}
+}
+
+.nav {
+	font-family: Poppins;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: $menuHeight;
+	position: relative;
+}
+
+.nav ul {
+	list-style: none;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: 100%;
+	width: 80%;
+	padding: 0;
+
+	li {
+		height: 100%;
+		width: 100%;
+		text-align: center;
+		text-transform: uppercase;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	li a {
+		text-decoration: none;
+		color: inherit;
+	}
+
+	li:hover {
+		background-color: #eee;
+		font-weight: bolder;
+	}
+
+	li a:hover {
+		text-decoration: underline;
+	}
+}
+
+@media (max-width: 1080px) {
+	.nav ul {
+		margin: 0;
+		position: fixed;
+		top: 0;
+		left: -100%;
+		transition: left .5s;
+		width: 100%;
+		height: 100vh;
+		background-color: rgba(255, 255, 255, .95);
+		z-index: 5000;
+		flex-direction: column;
+	}
+
+	.nav {
+		justify-content: space-between;
+	
+		h1 {
+			margin-left: 2rem;
+		}
+	}
+
+	.toggleNavbar, .toggleNavbarList {
+		display: block;
+		margin-right: 1rem;
+	}
+
+	.toggleNavbarList {
+		align-self: flex-end;
+
+	}
+}

@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+.footer-container {
+	min-height: 50vh;
+	display: flex;
+	text-align: center;
+	align-items: center;
+	width: 100%;
+	font-family: 'Poppins', sans-serif;
+}
+
+.footer {
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	border-top: 1px solid #ccc;
+}
+
+.footer .socials {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100px;
+	margin-top: 3rem;
+}
+
+.footer .socials img {
+	max-width: 30px;
+	margin-right: 1rem;
+	cursor: pointer;
+
+	&:hover {
+		opacity: .75;
+	}
+}
+
+.footer .divs {
+	display: flex;
+	justify-content: space-around;
+	align-items: flex-start;
+	background: #fff;
+	padding: 3rem;
+	width: 100%;
+	height: auto;
+}
+
+.footer div {
+	margin-right: 1.5rem;
+}
+
+.footer p {
+	margin: 2rem 0;
+	font-weight: bolder;
+	max-width: 30ch;
+	text-align: center;
+	margin: 1.5rem auto;
+}
+
+.footer a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.footer a:hover {
+	color: #606060;
+	text-decoration: underline;
+}
+
+.footer .strong {
+	font-weight: bolder;
+}
+
+.footer input, .footer button {
+	padding: 1rem;
+	border-radius: 1rem;
+	display: block;
+	width: 100%;	
+	border: 0;
+}
+
+.footer input {
+	outline: 1px solid #ccc;
+}
+
+.footer input:focus {
+	outline: 1px solid #ccc;
+}
+
+.footer button {
+	margin-top: 1rem;
+	background: #000;
+	color: #fff;
+	cursor: pointer;
+	text-transform: uppercase;
+	font-weight: bolder;
+	letter-spacing: 4px;
+	font-size: 1.05rem;
+}
+
+.footer button:hover {
+	opacity: .75;
+	transform: rotate(2deg);
+	transition: transform 1s;
+}
+
+.footer ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+}
+
+.footer ul li img {
+	max-width: 20px;
+	margin-right: .5rem;
+	user-select: none;
+	-webkit-user-drag: none;
+	-khtml-user-drag: none;
+	-moz-user-drag: none;
+	-o-user-drag: none;
+	user-drag: none;
+}
+
+.footer h3 {
+	font-weight: bolder;
+	font-size: 1.25rem;
+	margin-bottom: 2rem;
+}
+
+.footer .copyright {
+	background-color: #212121;
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	padding: 3rem;
+	margin: 0;
+}
+
+@media (max-width: 1080px) {
+	.footer .divs {
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+	}
+
+	.footer ul {
+		text-align: center;
+	}
+
+	.footer ul li {
+		width: 100%;
+	}
+
+	.footer h3 {
+		margin-top: 1rem;
+	}
+
+	.footer div {
+		padding-bottom: 1.5rem;
+		width: 100%;
+	}
+}
